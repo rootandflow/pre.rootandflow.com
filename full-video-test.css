@@ -40,20 +40,20 @@
   text-shadow: none;
 }
 
-#cmn-video-demo4__content--main h2,
-#cmn-video-demo4__content--main p,
-#cmn-video-demo4__content--main a {
+.cmn-video-demo4__content--main h2,
+.cmn-video-demo4__content--main p,
+.cmn-video-demo4__content--main a {
   color: #fff;
   text-shadow: -1px 1px 4px rgba(0, 0, 0, 0.6);
 }
-#cmn-video-demo4__content--main h2 {
+.cmn-video-demo4__content--main h2 {
   font-family: serif;
   font-size: 30px;
 }
-#cmn-video-demo4__content--main p {
+.cmn-video-demo4__content--main p {
   margin-bottom: 40px;
 }
-#cmn-video-demo4__content--main a {
+.cmn-video-demo4__content--main a {
   display: inline-block;
   margin: 0;
   padding: 10px 20px;
@@ -61,7 +61,7 @@
   border: solid 1px #fff;
   transition: background 0.3s, color 0.3s, text-shadow 0.3s;
 }
-#cmn-video-demo4__content--main a:hover {
+.cmn-video-demo4__content--main a:hover {
   background-color: #fff;
   color: #787878;
   text-shadow: none;
