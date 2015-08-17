@@ -34,6 +34,7 @@
 }
 
 #cmn-video-demo3__content {
+  background: linear-gradient(195deg, rgba(255,0,0,0.42), rgba(0,255,0,0.3), rgba(0,0,255,0.3));
   position: absolute;
   top: 0;
   right: 0;
