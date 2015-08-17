@@ -10,6 +10,10 @@
   min-height: 100%;
   width: auto;
   height: auto;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -65,4 +69,9 @@
   background-color: #fff;
   color: #787878;
   text-shadow: none;
+}
+
+@media screen and (max-device-width: 800px) {
+body { background: url(polina.jpg) #000 no-repeat center center fixed; }
+#bgvid { display: none; }
 }
