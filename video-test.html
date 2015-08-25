@@ -6,18 +6,22 @@
   </head>
   <body>
     <div id="cmn-video-demo3__container">
-      <video id="cmn-video-demo3__video" autoplay muted loop>
-        <source src="http://media.rootandflow.com/video/hawk-soaring/hawk-soaring-riding-wind-current--rnf.mp4" type="video/mp4">
-        <!--
-        <source src="media/demo.ogv" type="video/ogg">
-        <source src="media/demo.webm" type="video/webm">
-        -->
-        Your browser doesn't support HTML5 video. Here's a <a href="#">link</a> to download the video.
+      <video id="cmn-video-demo3__video" 
+        poster="http://media.rootandflow.com/video/hawk/soaring-riding-wind-current--rnf.png"
+        autoplay 
+        muted 
+        loop
+      >
+        <source src="http://media.rootandflow.com/video/hawk/soaring-riding-wind-current--rnf.webm" type="video/webm" codecs="vp9">
+        <source src="http://media.rootandflow.com/video/hawk/soaring-riding-wind-current--rnf.mp4" type="video/mp4" codecs="avc1.42E01E">
+        <img src="http://media.rootandflow.com/video/hawk/soaring-riding-wind-current--rnf.png" 
+        title="Your browser does not support HTML5 video."
+        >
       </video>
       <div id="cmn-video-demo3__content">
         <h2 style="font-family: Oswald;">Root and Flow</h2>
         <p style="font-family: Montserrat;">Marketing Consulting Firm</p>
-        <a href="#">Get Started</a>
+        <a style="font-family: Lora;" href="#">Get Started</a>
       </div>
     </div>
   </body>

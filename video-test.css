@@ -26,10 +26,15 @@
   z-index: 1;
   width: 600px;
   height: auto;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 #cmn-video-demo3__content {
+  background: linear-gradient(195deg, rgba(255,0,0,0.42), rgba(0,255,0,0.3), rgba(0,0,255,0.3));
   position: absolute;
   top: 0;
   right: 0;
@@ -64,6 +69,11 @@
   background-color: #fff;
   color: #787878;
   text-shadow: none;
+}
+
+@media screen and (max-device-width: 800px) {
+body { background: url(polina.jpg) #000 no-repeat center center fixed; }
+#bgvid { display: none; }
 }
 
 @media all and (min-width: 600px) {
