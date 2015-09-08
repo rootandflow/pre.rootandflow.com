@@ -1,0 +1,4 @@
+bower_components/
+bld/
+node_modules/
+pub/

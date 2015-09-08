@@ -1,0 +1,22 @@
+---
+title: Categories
+---
+
+<ul>
+{% for category in site.categories %}
+  <li>
+    <strong>{{ category | first }}</strong>
+    <ul>
+    {% for posts in category %}
+      {% for post in posts %}
+        {% if post.layout == "post" %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </li>
+{% endfor %}
+</ul>

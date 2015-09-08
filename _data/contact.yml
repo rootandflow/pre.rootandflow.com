@@ -1,0 +1,17 @@
+main:
+  fn: "Root and Flow, Inc."
+  email: "connect@rootandflow.com"
+  phone: "(213) 537-2444"
+  street-address: "2529 John Street"
+  locality: "Riverside"
+  state: "CA"
+  zip: "92503"
+
+support:
+  fn: "RnF Support Hotline"
+  email: "help@rootandflow.com"
+  phone: "(213) 537-2444"
+  street-address: "2529 John Street"
+  locality: "Riverside"
+  state: "CA"
+  zip: "92503"

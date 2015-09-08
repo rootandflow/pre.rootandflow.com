@@ -1,20 +1,19 @@
 {
-  "name": "foundation-apps-template",
-  "version": "1.1.0",
+  "name": "Rootandflow.com",
   "authors": [
-    "ZURB"
+    "Root and Flow, Inc."
   ],
-  "description": "Template project for Foundation for Apps by ZURB.",
-  "main": "gulpfile.js",
+  "description": "Marketing web site for Root and flow, a Marketing Services company.",
+  "main": "package.json",
   "keywords": [
-    "framework",
-    "angular",
     "web",
-    "apps"
+    "marketing",
+    "services",
+    "jekyll",
+    "github",
+    "development"
   ],
-  "license": "MIT",
-  "homepage": "http://foundation.zurb.com",
-  "private": true,
+  "homepage": "http://www.rootandflow.com",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -23,6 +22,11 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-apps": "~1.1.0"
-  }
+    "FitText.js": "~1.2.0",
+    "foundation": "~5.5.2",
+    "html5-device-mockups": "git+https://github.com/pixelsign/html5-device-mockups#2fcdcff8375579af739b266e4436525088076972",
+    "normalize-scss": "~3.0.3"
+  },
+  "license": "CC-BY-NC-ND-4.0",
+  "private": true
 }

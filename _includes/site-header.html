@@ -1,0 +1,16 @@
+<header>
+  <a class="site-title" href="{{ site.baseurl }}/">
+    <img data-src="holder.js/100x68?outline=yes&theme=lava" alt="RnF">
+  </a>
+  <nav>
+    <a href="#" class="menu-icon">
+    </a>
+    <div class="trigger">
+      {% for page in site.pages %}
+        {% if page.title %}
+        <a class="page-link" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+</header>
