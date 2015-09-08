@@ -1,0 +1,90 @@
+# Site settings
+## Github Pages
+### Configuration Overrides
+safe: true
+lsi: false
+# source: your top-level directory
+### Defaults
+highlighter: pygments
+# github: [Repository metadata]
+
+## Regional Settings
+timezone: America/Los_Angeles
+
+## Site structure
+url: "http://www.rootandflow.com" # the base hostname & protocol for your site
+  # Do not use in design assets; "site.url" is only used used in the xml feed and in the page head for the canonical header and the RSS link.
+baseurl: "" # the subpath of your site, e.g. /blog
+  # Use baseurl in design assets to indicate site root.
+  # If your baseurl varies from dev to production environment, set baseurl to match production and either:
+  # 1. run locally with "jekyll serve".
+  # 2. configure local settings in a separate _config_dev.yml file
+  # See: http://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development for reference.
+permalink: /:year/:month/:day/:title/
+# final trailing slash is optional here in config; will be appended to url address but not to {{ page.url }} liquid output
+cdn: # location for media assets
+  url: "http://media.rootandflow.com"
+  img: "http://media.rootandflow.com/images"
+  gif: "http://media.rootandflow.com/motion" # animated image files
+  vid: "http://media.rootandflow.com/video"
+# Use {{ site.cdn.img }} rather than site.url to link to media assets
+
+## Build settings
+### Name deployment environments -- will check against first 3 letters of Github repo via site.github.repository_name. No github repo information inlocal development will result in null value.
+env:
+  prd: "www.rootandflow.com" # live production site
+  stg: "pre.rootandflow.com" # staging
+  dev: NULL # development
+
+### Include Github Pages supported plugins.
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+### Exclude project manifest files and working resources from Github Pages site build.
+exclude:
+  - bower.json
+  - bower_components
+  - CNAME
+  - Gemfile
+  - LICENSE
+  - node_modules/
+  - npm-debug.log
+  - package.json
+  - README.md
+  - vendor/
+
+### Templating
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+  auto_ids: false
+
+# Site Info
+title: Rootandflow.com
+description: &site_desc "Web marketing services agency: Our clients see growing top-line revenue and increased bottom-line returns driven by scalable web strategies."
+lang: en
+
+# FrontMatter defaults
+defaults:
+  -
+    scope: &scope_all # Set scope to all pages in site
+      path: "" # an empty string here means all files in the project
+      type: "pages" # Available options are pages, posts, and drafts
+    values: &values_all
+      layout: "page"
+      description: *site_desc
+      og: # &og # Facebook Opengraph tags
+        image: "http://media.rootandflow.com/images/opengraph/rnf-logo-web-marketing.png"
+        type: "website"
+          # set includes dir here with reference to anchor in longmans theme
+      subtitle: "Web Content, Projects and Systems"
+  -
+    scope: # Set scope to all site posts
+      <<: *scope_all
+      type: "posts"
+    values:
+      <<: *values_all
+      layout: "post"
+

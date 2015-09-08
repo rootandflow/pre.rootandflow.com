@@ -1,0 +1,38 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    {% if site.github.repository_name == site.env.dev %}
+    <link rel="stylesheet" href="{{ "_bld/blokk-neue-font/styles.css" | prepend: site.baseurl }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ "/dst/styles.css" | prepend: site.baseurl }}">
+
+    {% if site.github.repository_name == site.env.prd %}
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    {% include google-tag-manager.html %}
+
+    {% elsif site.github.repository_name == site.env.stg %}
+
+    <script async type="text/javascript" src="{{ "/dst/scripts/fallback.js" | prepend: site.baseurl }}"></script>
+
+    {% else %}
+
+    <script async type="text/javascript" src="{{ "/dst/scripts/dev.js" | prepend: site.baseurl }}"></script>
+
+    {% endif %}
+
+    <script async type="text/javascript" src="{{ "/dst/scripts/vendor.js" | prepend: site.baseurl }}"></script>
+    <script async type="text/javascript" src="{{ "/dst/scripts/site.js" | prepend: site.baseurl }}"></script>
+    {% include font-load.html %}
+
+</head>

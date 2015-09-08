@@ -1,0 +1,20 @@
+---
+layout: post
+---
+
+<section class="copy">
+  {{ content }}
+</section>
+<section class="vars">
+  <h2>Liquid Variables</h2>
+  <dl>
+    <dt>Page categories:</dt>
+    <dd>{{ page.categories | join ', ' }}</dd>
+    <dt>Size of categories array:</dt>
+    <dd>{{ page.categories | size }}</dd>
+    <dt>First page category:</dt>
+    <dd>{{ page.categories | first }}</dd>
+    <dt>Last page category:</dt>
+    <dd>{{ page.categories i| last }}</dd>
+  </dl>
+</section>

@@ -1,0 +1,31 @@
+top:
+  toggle: Menu
+  right:
+    - name: RnF
+      url: /
+    - name: "Content"
+      url: /content/
+    - name: "Projects"
+      url: /projects/
+    - name: "Systems"
+      url: /systems/
+    - name: "Careers"
+      url: /careers/
+    - name: "Contact Us"
+      url: /contact/
+
+squeeze:
+  toggle: Menu
+  right:
+    - name: RnF
+      url: /
+    - name: "Content"
+      url: /content/
+    - name: "Projects"
+      url: /projects/
+    - name: "Systems"
+      url: /systems/
+    - name: "Careers"
+      url: /careers/
+    - name: "Contact Us"
+      url: /contact/

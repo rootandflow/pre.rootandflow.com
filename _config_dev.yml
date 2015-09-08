@@ -1,0 +1,10 @@
+# Development configuration:
+# Enter values to reflect your local environment.
+# Config options specified here will override those specified in _config.yml
+# Call with "$jekyll serve --config _config,_config_dev.yml"
+url: "http://localhost"
+# baseurl: ""
+
+# include BLOKKNeue-Regular placeholder font
+include:
+  - _bld/blokk-neue-font
